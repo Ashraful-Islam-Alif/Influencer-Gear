@@ -67,8 +67,8 @@ popular collection
 .all-collection-info{
     margin-left: 196px;
     margin-right: 196px;
-    /* width: 1047px;
-    height: 1662px; */
+    width: 1047px;
+    
     
 }
 .container-collections{
@@ -126,7 +126,7 @@ Feelworld
     text-align: center;
     background: #0A0826;
     color: white;
-    padding: 50px;
+    /* padding: 50px; */
     margin-top: 100px;
 }
 .influ_head{
