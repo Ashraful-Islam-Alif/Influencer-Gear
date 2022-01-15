@@ -1,9 +1,18 @@
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
+/* --------------
+influencer part
+------------------ */
 .start-container{
     display: flex;
     margin-left: 120px;
+    transition: width 2s, height 2s, transform 2s;
+    
+}
+.start-container:hover{
+    transform: rotate(5deg) skew(-30deg);
     
 }
 .info-influencer{
@@ -28,4 +37,103 @@ a{
     padding-left: 10px;
     padding-right: 10px;
     font: 16px;
+}
+
+/* --------------
+popular collection
+------------------ */
+
+.collection-header{
+    text-align: center;
+}
+.collection-info{
+    width: 329px;
+    height: 476px;
+    box-shadow: 2px 2px 20px 2px gray;
+    padding: 10px;
+    padding-bottom: 17px;
+    border-radius: 5px;
+}
+.collection-info img{ 
+    width: 100%;
+}
+.fas.fa-star.field{
+    color: orange;
+}
+.all-collection-info{
+    margin-left: 196px;
+    margin-right: 196px;
+    width: 1047px;
+    height: 1662px;
+    
+}
+.container-collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 30px;
+}
+
+
+.see_more{
+    text-align: right;
+    margin-top: 50px;
+    margin-left: 950px;
+}
+.btn_see-more{
+    color: #E02C6D ;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+/* ----------------
+Feelworld
+------------------ */
+
+.all-F6_PLUS_info{
+    width: 1110px;
+    height: 270px;
+    margin-top: 100px;
+    margin-left: 165px;
+    margin-right: 165px;
+    display: flex;
+}
+.feelworld_head{
+    font-weight: 700px;
+    font-size: 38px;
+}
+.pic_img img{
+    width: 100%;
+}
+.detail_info{
+    margin-left: 96px;
+}
+.feature_btn{
+    width: 155px;
+    height: 44px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: white;
+    font-size: 16px;
+}
+
+/* ---------------------
+ Influencer footer
+----------------------- */
+.All-about-Influencer{
+    text-align: center;
+    background: #0A0826;
+    color: white;
+    padding: 50px;
+    margin-top: 100px;
+}
+.influ_head{
+    font-size: 24px;
+    font-weight: bold;
+   
+}
+.online_info i{
+    
+    padding: 10px;
+    color: white;
 }
