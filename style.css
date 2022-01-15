@@ -5,26 +5,30 @@ body{
 /* --------------
 influencer part
 ------------------ */
-.start-container{
+.influn_head{
+    margin-left: 120px;
+}
+/* .info-influencer{
+    width: 582px;
+    height: 270px;
+} */
+.container{
     display: flex;
     margin-left: 120px;
     transition: width 2s, height 2s, transform 2s;
     
 }
-.start-container:hover{
+.container:hover{
     transform: rotate(5deg) skew(-30deg);
     
 }
-.info-influencer{
-    width: 582px;
-    height: 270px;
-}
+
 .title-info{
     font-weight: bold;
     font-size: 52px;
 }
-.influencer-camera{
-    margin-left: 133px;
+.info-influencer{
+    margin-left: 120px;
 }
 a{
     text-decoration: none;
@@ -63,8 +67,8 @@ popular collection
 .all-collection-info{
     margin-left: 196px;
     margin-right: 196px;
-    width: 1047px;
-    height: 1662px;
+    /* width: 1047px;
+    height: 1662px; */
     
 }
 .container-collections{
@@ -90,9 +94,7 @@ popular collection
 Feelworld
 ------------------ */
 
-.all-F6_PLUS_info{
-    width: 1110px;
-    height: 270px;
+.F6-container{
     margin-top: 100px;
     margin-left: 165px;
     margin-right: 165px;
@@ -102,11 +104,11 @@ Feelworld
     font-weight: 700px;
     font-size: 38px;
 }
-.pic_img img{
+.detail_info img{
     width: 100%;
 }
 .detail_info{
-    margin-left: 96px;
+    margin-left: 165px;
 }
 .feature_btn{
     width: 155px;
@@ -137,3 +139,88 @@ Feelworld
     padding: 10px;
     color: white;
 }
+
+
+/* ----------------
+Media Query
+__________________ */
+
+/*-------------------
+ Mobile Device
+---------------------- */
+
+@media only screen and (max-width:688px) {
+    .start-container, .all-collection-info, .all-F6_PLUS_info{ 
+        width: 100%;
+       
+    }
+    .container, .container-collections, .F6-container{
+        display: block;
+       grid-template-columns: repeat(1, 1fr);  
+       margin-left: 0px;
+       
+    }
+    .info-influencer, .collection-info, .detail_info {
+        
+        flex-direction: column;
+        
+        
+    }
+}
+
+/* ----------------------------
+Tablet
+------------------------------- */
+
+@media only screen and (min-width: 688px) and
+(max-width: 992px) {
+    .start-container, .all-F6_PLUS_info{ 
+        width: 100%;
+       
+    }
+
+   .all-collection-info{ 
+        width: 100%;
+       
+    }
+    .container, .F6-container{
+        display: block;
+       grid-template-columns: repeat(1, 1fr);  
+       margin-left: 0px;
+       
+    }
+    
+    .container-collections{
+       grid-template-columns: repeat(2, 1fr);  
+       
+    }
+    .info-influencer, .detail_info {
+        
+        flex-direction: column;
+        
+        
+    }
+    .collection-info {  
+        flex-direction: column;
+        
+        
+    }
+}
+
+/* -------------------------
+Desktop
+------------------------- */
+@media screen and (min-width: 992px){
+    .start-container, .all-collection-info, .all-F6_PLUS_info{ 
+        width: 100%;
+       
+    }
+    .container, .container-collections, .F6-container{
+      
+       grid-template-columns: repeat(3, 1fr);  
+       margin-left: 0px;
+       
+    }
+    
+}
+
