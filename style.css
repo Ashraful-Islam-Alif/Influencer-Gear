@@ -111,11 +111,13 @@ Feelworld
     font-weight: 700px;
     font-size: 38px;
 }
+.detail_info{
+    width: 404px;
+height: 270px;
+    margin-left: 165px;
+}
 .detail_info img{
     width: 100%;
-}
-.detail_info{
-    margin-left: 165px;
 }
 .feature_btn{
     width: 155px;
