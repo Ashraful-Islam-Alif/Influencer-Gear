@@ -1,0 +1,35 @@
+/* ----------------
+Media Query
+__________________ */
+
+/*-------------------
+ Mobile Device
+---------------------- */
+
+@media only screen and (max-width:688px) {
+    body{
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    .start-container, .all-collection-info{
+        width: 100%;
+    }
+    .container, .container-collections{
+        
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(1,1fr);
+        background-color: greenyellow;
+        
+    }
+    .icons_bar{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: greenyellow;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+}
